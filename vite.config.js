@@ -1,7 +1,6 @@
-import { dirname, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
+// import { dirname, resolve } from 'node:path'
+// import { fileURLToPath } from 'node:url'
 import react from '@vitejs/plugin-react-swc'
-import { defineConfig } from 'vite'
 import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import { build, defineConfig, loadEnv } from 'vite'
 import svgLoader from 'vite-svg-loader'
@@ -55,9 +54,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': resolve(dirname(fileURLToPath(import.meta.url)), './src')
+      '@': resolve(__dirname, '.', 'src/')
     }
   },
+  resolve: { alias },
   css: {
     preprocessorOptions: {
       scss: {
