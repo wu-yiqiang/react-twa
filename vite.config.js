@@ -1,18 +1,81 @@
-import { dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import react from '@vitejs/plugin-react-swc';
-import { defineConfig } from 'vite';
-
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
+import { build, defineConfig, loadEnv } from 'vite'
+import svgLoader from 'vite-svg-loader'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import eslintPlugin from 'vite-plugin-eslint'
+import { resolve } from 'path'
+import { visualizer } from 'rollup-plugin-visualizer'
+import viteCompression from 'vite-plugin-compression'
 export default defineConfig({
   base: './',
-  plugins: [react()],
+  publicDir: './public',
+  plugins: [
+    react(),
+    nodePolyfills(),
+    visualizer(),
+    svgLoader(),
+    createSvgIconsPlugin({
+      // 指定需要缓存的图标文件夹
+      iconDirs: [pathResolve('src/assets/svg/')],
+      // 指定symbolId格式
+      symbolId: 'icon-[dir]-[name]'
+    })
+    // eslintPlugin()
+    // viteImagemin({
+    //   gifsicle: {
+    //     optimizationLevel: 7,
+    //     interlaced: false
+    //   },
+    //   optipng: {
+    //     optimizationLevel: 7
+    //   },
+    //   mozjpeg: {
+    //     quality: 20
+    //   },
+    //   pngquant: {
+    //     quality: [0.8, 0.9],
+    //     speed: 4
+    //   },
+    //   svgo: {
+    //     plugins: [
+    //       {
+    //         name: 'removeViewBox'
+    //       },
+    //       {
+    //         name: 'removeEmptyAttrs',
+    //         active: false
+    //       }
+    //     ]
+    //   }
+    // })
+  ],
   resolve: {
     alias: {
-      '@': resolve(dirname(fileURLToPath(import.meta.url)), './src'),
+      '@': resolve(dirname(fileURLToPath(import.meta.url)), './src')
     }
   },
-  publicDir: './public',
-   server: {
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/assets/scss/index.scss";`
+      },
+      postcss: {
+        plugins: {
+          'postcss-pxtorem': {
+            rootValue: 37.5,
+            propList: ['*']
+          },
+          'postcss-import': require('postcss-import'),
+          autoprefixer: require('autoprefixer')
+        }
+      }
+    }
+  },
+  server: {
     hmr: true,
     // 端口号
     port: 3393,
@@ -69,5 +132,4 @@ export default defineConfig({
       }
     }
   }
-});
-
+})
