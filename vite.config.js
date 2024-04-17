@@ -12,6 +12,11 @@ import viteCompression from 'vite-plugin-compression'
 export default defineConfig({
   base: './',
   publicDir: './public',
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, '.', 'src/')
+    }
+  },
   plugins: [
     react(),
     nodePolyfills(),
@@ -52,12 +57,6 @@ export default defineConfig({
     //   }
     // })
   ],
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, '.', 'src/')
-    }
-  },
-  resolve: { alias },
   css: {
     preprocessorOptions: {
       scss: {
