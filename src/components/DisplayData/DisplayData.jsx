@@ -1,6 +1,6 @@
 import { isRGB } from '@tma.js/sdk';
 
-import { RGB } from '~/components/RGB/RGB.jsx';
+import { RGB } from '@/components/RGB/RGB.jsx';
 
 import './DisplayData.css';
 

@@ -1,9 +1,9 @@
 import { useInitData, useInitDataRaw } from '@tma.js/sdk-react';
 import { useMemo } from 'react';
 
-import { DisplayData } from '~/components/DisplayData/DisplayData.jsx';
-import { Link } from '~/components/Link/Link.jsx';
-import { Page } from '~/components/Page/Page.jsx';
+import { DisplayData } from '@/components/DisplayData/DisplayData.jsx';
+import { Link } from '@/components/Link/Link.jsx';
+import { Page } from '@/components/Page/Page.jsx';
 
 import './InitDataPage.css';
 
