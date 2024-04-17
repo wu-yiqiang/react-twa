@@ -12,7 +12,7 @@ export function IndexPage() {
     <Page title="Home Page">
       <p>
         This page is a home page in this boilerplate. You can use the links below to visit other
-        pages with their own functionality.
+        pages with their own functionality. 来及萨达
       </p>
       <ul className="index-page__links">
         {routes.map(({ path, title, icon }) => title && (
