@@ -1,7 +1,7 @@
 // import { dirname, resolve } from 'node:path'
 // import { fileURLToPath } from 'node:url'
 import react from '@vitejs/plugin-react-swc'
-import { nodePolyfills } from 'vite-plugin-node-polyfills'
+// import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import { build, defineConfig, loadEnv } from 'vite'
 import svgLoader from 'vite-svg-loader'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
@@ -19,7 +19,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    nodePolyfills(),
+    // nodePolyfills(),
     visualizer(),
     svgLoader(),
     createSvgIconsPlugin({
