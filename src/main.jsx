@@ -5,7 +5,7 @@ import { Root } from '@/components/Root/Root';
 
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('app')).render(
   <React.StrictMode>
     <Root />
   </React.StrictMode>,
