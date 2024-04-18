@@ -9,8 +9,8 @@ import SvgIcon from '@/components/SvgIcon'
  */
 export function Home() {
   return (
-    <Page title="Home Page">
-       <div className={style.Home}>
+    // <Page title="Home Page">
+    <div className={style.Home}>
         <div className={style.banner}>
           <div className={style.title}>{t('home.title')}</div>
           <div className={style.count}>
@@ -36,7 +36,8 @@ export function Home() {
             <span className={style.title}>{t('home.shell')}</span>
           </div>
         </div>
-        </div>
+    </div>
+  )
       {/* <ul className="index-page__links">
         {routes.map(({ path, title, icon }) => title && (
           <li className="index-page__link-item" key={path}>
@@ -51,6 +52,4 @@ export function Home() {
           </li>
         ))}
       </ul> */}
-    </Page>
-  );
 }
