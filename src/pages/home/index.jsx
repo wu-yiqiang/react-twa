@@ -20,9 +20,7 @@ export function Home(props) {
   //  }
   return (
     <Page title="Home Page">
-      <div onClick={gotoAddCrypto}>
-        launch parameters2
-      </div>
+      <button onClick={gotoAddCrypto}>Go</button>
       <Link to="crypto">
         {' '}
         <button>点我1</button>
