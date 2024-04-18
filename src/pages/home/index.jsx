@@ -22,7 +22,15 @@ export function Home(props) {
   //  }
   return (
     <Page title="Home Page">
-      <button onClick={gotoSend}>dianwo</button>
+      <Link to="crypto">launch parameters2</Link>
+      <Link to="crypto">
+        {' '}
+        <button>点我1</button>
+      </Link>
+      <button>
+        <Link to="crypto">点我2</Link>
+      </button>
+
       {/* <div className={style.Home}>
         <div className={style.banner}>
           <div className={style.title}>{t('home.title')}</div>
