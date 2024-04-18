@@ -15,7 +15,7 @@ export function Home() {
             <Link className="index-page__link" to={path}>
               {icon && (
                 <i className="index-page__link-icon">
-                  {icon}
+                  {icon}你好
                 </i>
               )}
               {title}
