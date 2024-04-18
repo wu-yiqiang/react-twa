@@ -14,7 +14,7 @@ export function Home(props) {
     Router.push('/crypto')
   }
    const gotoExchange = () => {
-      Navigate.push('/crypto')
+      Navigate.to('/crypto')
    }
    const gotoShell = () => {
      Route.push("/crypto")
