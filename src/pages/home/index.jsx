@@ -11,18 +11,19 @@ export function Home(props) {
   const gotoSend = () => {
     props.history.push('/crypto')
   }
-   const gotoAddCrypto = () => {
-     props.history.push('/crypto')
-   }
-   const gotoExchange = () => {
-     props.history.push('/crypto')
-   }
-   const gotoShell = () => {
-     props.history.push('/crypto')
-   }
+  //  const gotoAddCrypto = () => {
+  //    props.history.push('/crypto')
+  //  }
+  //  const gotoExchange = () => {
+  //    props.history.push('/crypto')
+  //  }
+  //  const gotoShell = () => {
+  //    props.history.push('/crypto')
+  //  }
   return (
-    // <Page title="Home Page">
-    <div className={style.Home}>
+    <Page title="Home Page">
+      <button onClick={gotoSend}>dianwo</button>
+      {/* <div className={style.Home}>
         <div className={style.banner}>
           <div className={style.title}>{t('home.title')}</div>
           <div className={style.count}>
@@ -48,7 +49,8 @@ export function Home(props) {
             <span className={style.title}>{t('home.shell')}</span>
           </div>
         </div>
-    </div>
+      </div> */}
+    </Page>
   )
       {/* <ul className="index-page__links">
         {routes.map(({ path, title, icon }) => title && (
