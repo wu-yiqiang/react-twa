@@ -3,17 +3,15 @@ import { Page } from '@/components/Page/Page.jsx';
 import { routes } from '@/navigation/routes.jsx';
 import style from './index.module.scss'
 import SvgIcon from '@/components/SvgIcon'
-
+import { Navigate, Route, Router, Routes } from 'react-router-dom'
 /**
  * @returns {JSX.Element}
  */
 export function Home(props) {
-  const gotoSend = () => {
-    props.history.push('/crypto')
-  }
-  //  const gotoAddCrypto = () => {
-  //    props.history.push('/crypto')
-  //  }
+   const gotoAddCrypto = () => {
+     // Routes.history.push('/crypto')
+     Routes.push('/crypto')
+   }
   //  const gotoExchange = () => {
   //    props.history.push('/crypto')
   //  }
@@ -22,7 +20,9 @@ export function Home(props) {
   //  }
   return (
     <Page title="Home Page">
-      <Link to="crypto">launch parameters2</Link>
+      <div onClick={gotoAddCrypto}>
+        launch parameters2
+      </div>
       <Link to="crypto">
         {' '}
         <button>点我1</button>
