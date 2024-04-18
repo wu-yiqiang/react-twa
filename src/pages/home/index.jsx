@@ -8,19 +8,22 @@ import { Navigate, Route, Router, Routes } from 'react-router-dom'
  * @returns {JSX.Element}
  */
 export function Home(props) {
-   const gotoAddCrypto = () => {
-     // Routes.history.push('/crypto')
-     Routes.push('/crypto')
+  const gotoAddCrypto = () => {
+    // Routes.history.push('/crypto')
+    //  Routes.push('/crypto')
+    Router.push('/crypto')
+  }
+   const gotoExchange = () => {
+      Navigate.push('/crypto')
    }
-  //  const gotoExchange = () => {
-  //    props.history.push('/crypto')
-  //  }
-  //  const gotoShell = () => {
-  //    props.history.push('/crypto')
-  //  }
+   const gotoShell = () => {
+     Route.push("/crypto")
+   }
   return (
     <Page title="Home Page">
       <button onClick={gotoAddCrypto}>Go</button>
+      <button onClick={gotoExchange}>Go1</button>
+      <button onClick={gotoShell}>Go2</button>
       <Link to="crypto">
         {' '}
         <button>点我1</button>
@@ -58,7 +61,8 @@ export function Home(props) {
       </div> */}
     </Page>
   )
-      {/* <ul className="index-page__links">
+  {
+    /* <ul className="index-page__links">
         {routes.map(({ path, title, icon }) => title && (
           <li className="index-page__link-item" key={path}>
             <Link className="index-page__link" to={path}>
@@ -71,5 +75,6 @@ export function Home(props) {
             </Link>
           </li>
         ))}
-      </ul> */}
+      </ul> */
+  }
 }
