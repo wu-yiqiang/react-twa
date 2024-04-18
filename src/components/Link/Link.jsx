@@ -19,9 +19,6 @@ export function Link(props) {
 
   const onClick = useCallback((e) => {
     propsOnClick && propsOnClick(e);
-
-    // Compute if target path is external. In this case we would like to open link using
-    // TMA method.
     let path;
     if (typeof to === 'string') {
       path = to;

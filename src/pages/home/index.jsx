@@ -7,7 +7,19 @@ import SvgIcon from '@/components/SvgIcon'
 /**
  * @returns {JSX.Element}
  */
-export function Home() {
+export function Home(props) {
+  const gotoSend = () => {
+    props.history.push('/crypto')
+  }
+   const gotoAddCrypto = () => {
+     props.history.push('/crypto')
+   }
+   const gotoExchange = () => {
+     props.history.push('/crypto')
+   }
+   const gotoShell = () => {
+     props.history.push('/crypto')
+   }
   return (
     // <Page title="Home Page">
     <div className={style.Home}>
