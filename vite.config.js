@@ -24,7 +24,7 @@ export default defineConfig({
     svgLoader(),
     createSvgIconsPlugin({
       // 指定需要缓存的图标文件夹
-      iconDirs: [pathResolve('src/assets/svg/')],
+      iconDirs: [resolve('src/assets/svg/')],
       // 指定symbolId格式
       symbolId: 'icon-[dir]-[name]'
     })
@@ -68,8 +68,8 @@ export default defineConfig({
             rootValue: 37.5,
             propList: ['*']
           },
-          'postcss-import': require('postcss-import'),
-          autoprefixer: require('autoprefixer')
+          // 'postcss-import': require('postcss-import'),
+          // autoprefixer: require('autoprefixer')
         }
       }
     }
