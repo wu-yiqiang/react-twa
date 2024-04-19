@@ -27,6 +27,14 @@ export default defineConfig({
       iconDirs: [resolve('src/assets/svg/')],
       // 指定symbolId格式
       symbolId: 'icon-[dir]-[name]'
+    }),
+    viteCompression({
+      verbose: true,
+      disable: false,
+      threshold: 10240,
+      deleteOriginFile: false,
+      algorithm: 'gzip',
+      ext: '.gz'
     })
     // eslintPlugin()
     // viteImagemin({
@@ -67,7 +75,7 @@ export default defineConfig({
           'postcss-pxtorem': {
             rootValue: 37.5,
             propList: ['*']
-          },
+          }
           // 'postcss-import': require('postcss-import'),
           // autoprefixer: require('autoprefixer')
         }
@@ -117,12 +125,13 @@ export default defineConfig({
       output: {
         manualChunks: (id) => {
           // 对views目录中的文件进行单独打包
-          if (id.includes('src/pages')) return 'views'
+          // if (id.includes('src/pages')) return 'views'
           // 让每个插件都打包成独立的文件
           if (id.includes('node_modules')) return id.toString().split('node_modules')[1].split('/')[0].toString()
         },
         entryFileNames: 'js/[name].[hash].js',
-        chunkFileNames: 'js/[name].[hash].js'
+        chunkFileNames: 'js/[name].[hash].js',
+        assetFileNames: '[ext]/[name]-[hash].[ext]' // 资源文件像 字体，图片等
         // assetFileNames: (assetInfo) => {
         //   const fileName = assetInfo.name
         //   if (fileName?.endsWith('.svg')) return 'img/svg/[name]-[hash][extname]'
