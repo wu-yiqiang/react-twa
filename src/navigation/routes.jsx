@@ -19,8 +19,6 @@ import { redirect } from 'react-router-dom'
 //  * @type {Route[]}
 //  */
 const routesMap = [
-  { path: '/', redirect: '/home' },
-  { path: '/', redirect: '/home' },
   { path: '/home', Component: Home },
   { path: '/addcrypto', Component: Add }
   // { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
