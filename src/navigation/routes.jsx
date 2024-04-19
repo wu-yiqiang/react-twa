@@ -4,7 +4,7 @@
 // import { ThemeParamsPage } from '@/pages/ThemeParamsPage/ThemeParamsPage.jsx';
 // import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
 import { Home } from '@/pages/home/index'
-import { AddCrypto } from '@/pages/crypto/index'
+import { AddCrypto } from '@/pages/crypto/addCrypto'
 
 /**
  * @typedef {object} Route
