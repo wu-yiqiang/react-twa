@@ -26,7 +26,7 @@ export function Home(props) {
       <button onClick={gotoShell}>Go2</button>
       <Link to="crypto">
         {' '}
-        <button>点我1</button>
+        <button>点我1 发送氛围</button>
       </Link>
       <button>
         <Link to="crypto">点我2</Link>
