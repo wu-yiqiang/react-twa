@@ -10,11 +10,10 @@ import { BrowserRouter as Router, Route, useHistory } from 'react-router-dom'
  * @returns {JSX.Element}
  */
 export function Home(props) {
-  const history = useHistory()
   const gotoAddCrypto = () => {
     // Routes.history.push('/crypto')
     //  Routes.push('/crypto')
-    history.push('/addcrypto')
+    Router.push('/addcrypto')
   }
    const gotoExchange = () => {
       Navigate.to('/addcrypto')
