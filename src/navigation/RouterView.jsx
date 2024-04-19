@@ -16,7 +16,7 @@ const RouterView = (props) => {
     return <Link to={targetRouter.redirect} />
   }
   if (!targetRouter?.auth) {
-    return <Route path={targetRouter.path} element={targetRouter.component} />
+    return <Route key={targetRouter.path} {...targetRouter} />
   }
   // if (targetRouter.auth) {
   //   // 要登录授权
