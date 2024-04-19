@@ -23,7 +23,7 @@ export function Home(props) {
    }
   return (
     <Page title="Home Page">
-      <button onClick={gotoAddCrypto}>Go</button>
+      <button onClick={gotoAddCrypto}>Gohistory</button>
       <button onClick={gotoExchange}>Go1</button>
       <button onClick={gotoShell}>Go2</button>
       <Link to="addcrypto">
