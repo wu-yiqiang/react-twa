@@ -4,16 +4,16 @@ import { routes } from '@/navigation/routes.jsx';
 import style from './index.module.scss'
 import SvgIcon from '@/components/SvgIcon'
 // import { Navigate, Route, Router, Routes } from 'react-router-dom'
-import { BrowserRouter as Router, Route, useHistory } from 'react-router-dom'
-
+import { useNavigate } from 'react-router-dom'
 /**
  * @returns {JSX.Element}
  */
 export function Home(props) {
+  const history = useNavigate()
   const gotoAddCrypto = () => {
     // Routes.history.push('/crypto')
     //  Routes.push('/crypto')
-    Router.push('/addcrypto')
+    history.push('/addcrypto')
   }
    const gotoExchange = () => {
       Navigate.to('/addcrypto')
