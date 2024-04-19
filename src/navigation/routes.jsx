@@ -5,6 +5,7 @@
 // import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
 import { Home } from '@/pages/home/index'
 import { Add } from '@/pages/crypto/add'
+import { redirect } from 'react-router-dom'
 
 // /**
 //  * @typedef {object} Route
@@ -18,6 +19,7 @@ import { Add } from '@/pages/crypto/add'
 //  * @type {Route[]}
 //  */
 const routesMap = [
+  { path: '/', redirect: "/home" },
   { path: '/home', Component: Home },
   { path: '/addcrypto', Component: Add }
   // { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
