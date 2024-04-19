@@ -11,7 +11,7 @@ import {
   Router,
   Routes,
 } from 'react-router-dom';
-
+import RouterView from  '@/navigation/RouterView'
 import { routes } from '@/navigation/routes.jsx';
 
 /**
@@ -27,10 +27,11 @@ export function App() {
   return (
     <Router location={location} navigator={navigator}>
       <Routes>
-        {routes.map((route) => (
+        {/* {routes.map((route) => (
           <Route key={route.path} {...route} />
-        ))}
-        <Route path="/" element={<Navigate to="/home" />} />
+        ))} */}
+        <RouterView />
+        {/* <Route path="/" element={<Navigate to="/home" />} /> */}
       </Routes>
     </Router>
   )

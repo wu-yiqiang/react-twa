@@ -17,7 +17,7 @@ import { Add } from '@/pages/crypto/add'
 /**
  * @type {Route[]}
  */
-export const routes = [
+export default routes = [
   { path: '/home', Component: Home },
   { path: '/addcrypto', Component: Add }
   // { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
