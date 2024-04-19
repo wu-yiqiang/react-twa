@@ -27,13 +27,13 @@ export function Home(props) {
       <button onClick={gotoAddCrypto}>Go</button>
       <button onClick={gotoExchange}>Go1</button>
       <button onClick={gotoShell}>Go2</button>
-      <Link to="addcrypto">
+      {/* <Link to="addcrypto">
         {' '}
         <button>点我1 发送氛围萨达撒·</button>
       </Link>
       <button>
         <Link to="addcrypto">点我2</Link>
-      </button>
+      </button> */}
 
       {/* <div className={style.Home}>
         <div className={style.banner}>
