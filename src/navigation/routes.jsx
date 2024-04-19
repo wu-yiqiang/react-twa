@@ -3,7 +3,8 @@
 // import { LaunchParamsPage } from '@/pages/LaunchParamsPage/LaunchParamsPage.jsx';
 // import { ThemeParamsPage } from '@/pages/ThemeParamsPage/ThemeParamsPage.jsx';
 // import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
-import {Home} from '@/pages/home/index'
+import { Home } from '@/pages/home/index'
+import { AddCrypto } from '@/pages/crypto/index'
 
 /**
  * @typedef {object} Route
@@ -17,7 +18,8 @@ import {Home} from '@/pages/home/index'
  * @type {Route[]}
  */
 export const routes = [
-  { path: '/', Component: Home },
+  { path: '/home', Component: Home },
+  { path: '/addcrypto', Component: AddCrypto }
   // { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
   // { path: '/theme-params', Component: ThemeParamsPage, title: 'Theme Params' },
   // { path: '/launch-params', Component: LaunchParamsPage, title: 'Launch Params' },

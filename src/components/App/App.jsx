@@ -27,9 +27,11 @@ export function App() {
   return (
     <Router location={location} navigator={navigator}>
       <Routes>
-        {routes.map((route) => <Route key={route.path} {...route} />)}
-        <Route path="*" element={<Navigate to="/" />} />
+        {routes.map((route) => (
+          <Route key={route.path} {...route} />
+        ))}
+        <Route path="/" element={<Navigate to="/home" />} />
       </Routes>
     </Router>
-  );
+  )
 }
