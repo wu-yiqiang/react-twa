@@ -12,7 +12,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import RouterView from  '@/navigation/RouterView'
-import { routes } from '@/navigation/routes.jsx';
+// import { routes } from '@/navigation/routes.jsx';
 
 /**
  * @return {JSX.Element}

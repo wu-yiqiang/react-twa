@@ -6,18 +6,18 @@
 import { Home } from '@/pages/home/index'
 import { Add } from '@/pages/crypto/add'
 
-/**
- * @typedef {object} Route
- * @property {string} path
- * @property {import('react').ComponentType} Component
- * @property {string} [title]
- * @property {import('react').JSX.Element} [icon]
- */
+// /**
+//  * @typedef {object} Route
+//  * @property {string} path
+//  * @property {import('react').ComponentType} Component
+//  * @property {string} [title]
+//  * @property {import('react').JSX.Element} [icon]
+//  */
 
-/**
- * @type {Route[]}
- */
-export default routes = [
+// /**
+//  * @type {Route[]}
+//  */
+const routesMap = [
   { path: '/home', Component: Home },
   { path: '/addcrypto', Component: Add }
   // { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
@@ -35,3 +35,5 @@ export default routes = [
   //   )
   // }
 ]
+
+export default routesMap

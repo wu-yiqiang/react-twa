@@ -1,6 +1,6 @@
 import { Link } from '@/components/Link/Link.jsx';
 import { Page } from '@/components/Page/Page.jsx';
-import { routes } from '@/navigation/routes.jsx';
+// import { routes } from '@/navigation/routes.jsx';
 import style from './index.module.scss'
 import SvgIcon from '@/components/SvgIcon'
 // import { Navigate, Route, Router, Routes } from 'react-router-dom'
