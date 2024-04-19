@@ -11,25 +11,25 @@ export function Home(props) {
   const gotoAddCrypto = () => {
     // Routes.history.push('/crypto')
     //  Routes.push('/crypto')
-    Router.push('/crypto')
+    Router.push('/addcrypto')
   }
    const gotoExchange = () => {
-      Navigate.to('/crypto')
+      Navigate.to('/addcrypto')
    }
    const gotoShell = () => {
-     Route.push("/crypto")
+     Route.push('/addcrypto')
    }
   return (
     <Page title="Home Page">
       <button onClick={gotoAddCrypto}>Go</button>
       <button onClick={gotoExchange}>Go1</button>
       <button onClick={gotoShell}>Go2</button>
-      <Link to="crypto">
+      <Link to="addcrypto">
         {' '}
         <button>点我1 发送氛围</button>
       </Link>
       <button>
-        <Link to="crypto">点我2</Link>
+        <Link to="addcrypto">点我2</Link>
       </button>
 
       {/* <div className={style.Home}>
