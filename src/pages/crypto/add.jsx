@@ -1,7 +1,9 @@
 import { Page } from '@/components/Page/Page.jsx'
+import './addcrypto.module.scss'
 /**
  * @returns {JSX.Element}
  */
-export function Add(props) {
-  return <Page title="Add Crypto Page">Add Crypto dfs1</Page>
+export default function Add() {
+  return <div className='Add'>Add Crysd萨达pto dfs1
+  </div>
 }

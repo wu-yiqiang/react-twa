@@ -3,7 +3,6 @@
   width: 100%;
   overflow-y: scroll;
   @include noScrollBar();
-
   // padding-bottom: 40px;
   .banner {
     width: 100%;
@@ -11,7 +10,6 @@
     display: grid;
     place-items: center;
     background-color: var(--item-bgc-color);
-
     .title {
       font-size: 20px;
       font-weight: 400;
@@ -40,8 +38,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     padding: 0 30px;
-    background-color: var(--item-bgc-color);
-
+      background-color: var(--item-bgc-color);
     .shell,
     .send,
     .exchange,
@@ -51,12 +48,11 @@
       align-items: center;
       justify-content: center;
       padding-bottom: 10px;
-
       .title {
         font-size: 14px;
         font-weight: 700;
         margin-top: 6px;
-        color: var(--color-primary);
+        color: var(--text-primary-color);
       }
     }
   }
@@ -68,16 +64,13 @@
     overflow-y: scroll;
     @include noScrollBar();
     -webkit-overflow-scrolling: touch;
-
     .title {
       display: flex;
       justify-content: space-between;
-
       .lefttitle {
         font-size: 20px;
         font-weight: 700;
       }
-
       .righttitle {
         font-size: 16px;
         color: rgba(0, 149, 255, 0.986);
@@ -92,7 +85,6 @@
     border-radius: 10px 10px 0 0;
     background-color: var(--item-bgc-color);
     padding: $--page-padding;
-
     .title {
       font-size: 14px;
       font-weight: 700;

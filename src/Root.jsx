@@ -2,8 +2,7 @@ import { setDebug } from '@tma.js/sdk';
 import { DisplayGate, SDKProvider, useLaunchParams } from '@tma.js/sdk-react';
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { useEffect, useMemo } from 'react';
-
-import { App } from '@/components/App/App.jsx';
+import { App } from './App.jsx';
 
 /**
  * @param {unknown} error
