@@ -5,8 +5,13 @@ import 'virtual:svg-icons-register'
 import '@/assets/scss/dark.scss'
 import '@/assets/scss/light.scss'
 import 'amfe-flexible'
+// import { ThemeProvider, CssBaseline } from '@mui/material'
 ReactDOM.createRoot(document.getElementById('app')).render(
   <React.StrictMode>
-    <Root />
-  </React.StrictMode>,
-);
+    {/* <Root /> */}
+    {/* <ThemeProvider theme={theme}> */}
+      {/* <CssBaseline /> */}
+      <Root />
+    {/* </ThemeProvider> */}
+  </React.StrictMode>
+)

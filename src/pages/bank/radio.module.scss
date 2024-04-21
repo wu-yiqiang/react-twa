@@ -1,0 +1,40 @@
+.Radio {
+  background-color: var(--background-color-base);
+  border-radius: 10px;
+
+  .item {
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    align-items: center;
+
+    .left {
+      width: 16%;
+    }
+
+    .right {
+      width: 84%;
+      border-bottom: 1px solid gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px 0 0;
+      .titleBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+          font-size: 16px;
+          color: var(--color-text-primary);
+        }
+
+        .tips {
+          font-size: 12px;
+          margin-top: 4px;
+          color: var(--color-text-placeholder);
+        }
+
+      }
+    }
+  }
+}

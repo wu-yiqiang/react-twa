@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import style from './addItem.module.scss'
 import SvgIcon from '@/components/SvgIcon'
 function AddItem(props) {
-  const { typename, title, typecount, count } = props
+  const { typename, typecount, title } = props
   useEffect(() => {}, [])
   return (
     <div className={style.AddItem}>

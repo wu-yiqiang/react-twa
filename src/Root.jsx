@@ -1,4 +1,4 @@
-import { setDebug } from '@tma.js/sdk';
+import { setDebug, SettingsButton, postEvent } from '@tma.js/sdk'
 import { DisplayGate, SDKProvider, useLaunchParams } from '@tma.js/sdk-react';
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { useEffect, useMemo } from 'react';
@@ -37,17 +37,17 @@ function Loading() {
  */
 export function Root() {
   const launchParams = useLaunchParams();
-
   const manifestUrl = useMemo(() => {
     return new URL('tonconnect-manifest.json', window.location.href).toString();
   }, []);
-
-  // Enable debug mode to see all the methods sent and events received.
+  
+  const settingsButton = new SettingsButton(false, '6.3', postEvent)
   useEffect(() => {
     if (launchParams.startParam === 'debug') {
       setDebug(true);
       import('eruda').then((lib) => lib.default.init());
     }
+    settingsButton.show()
   }, [launchParams]);
 
   return (

@@ -38,5 +38,23 @@
       "tips": "从外部钱包接收"
     }
   },
+  "bank": {
+    "title": "选择要购买的资产",
+    "continue": "继续",
+    "item1": {
+      "title": "泰达币"
+    },
+    "item2": {
+      "title": "Toncoin"
+    },
+    "item3": {
+      "title": "Bitcoin"
+    }
+  },
+  "nosupport": {
+    "title": "地区不支持",
+    "detail": "由于您是不受支持的地区的居民或公民，对钱包的访问会受到限制，在常见问题解答中了解更多信息",
+    "goback": "返回主页"
+  },
   "mine": {}
 }

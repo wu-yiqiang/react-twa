@@ -21,3 +21,18 @@
     height: 0;
   }
 }
+
+@mixin bottom-button {
+  cursor: pointer;
+    width: 100%;
+    padding: 18px;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    color: var(--text-primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    bottom: 0;
+    background-color: var(--color-primary);
+    z-index: 999999;
+}

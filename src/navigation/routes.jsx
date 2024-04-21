@@ -5,6 +5,8 @@
 // import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
 import Home from '@/pages/home/index'
 import Add from '@/pages/crypto/add'
+import Bank from '@/pages/bank/index'
+import NoSupport from '@/pages/nosupport/index'
 // /**
 //  * @typedef {object} Route
 //  * @property {string} path
@@ -19,7 +21,9 @@ import Add from '@/pages/crypto/add'
 const routesMap = [
   { path: '/', Component: Home },
   { path: '/home', Component: Home },
-  { path: '/addcrypto', Component: Add }
+  { path: '/addcrypto', Component: Add },
+  { path: '/bank', Component: Bank },
+  { path: '/nosupport', Component: NoSupport }
 ]
 
 export default routesMap

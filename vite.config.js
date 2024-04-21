@@ -71,11 +71,11 @@ export default defineConfig({
         additionalData: `@import "@/assets/scss/index.scss";`
       },
       postcss: {
-        plugins: {
-          'postcss-pxtorem': {
-            rootValue: 37.5,
-            propList: ['*']
-          }
+        // plugins: {
+        //   'postcss-pxtorem': {
+        //     rootValue: 37.5,
+        //     propList: ['*']
+        //   }
           // 'postcss-import': require('postcss-import'),
           // autoprefixer: require('autoprefixer')
         }

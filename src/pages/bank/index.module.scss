@@ -1,0 +1,21 @@
+.Bank {
+
+  .title {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    height: 180px;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary-color);
+  }
+
+  .opts {
+    display: grid;
+    padding: 10px;
+  }
+  .continue {
+    @include bottom-button();
+  }
+}

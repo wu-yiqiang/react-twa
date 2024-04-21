@@ -4,6 +4,7 @@ import style from './index.module.scss'
 import SvgIcon from '@/components/SvgIcon'
 import Item from '@/pages/home/item'
 import Explore from '@/pages/home/explore'
+import { useExpand } from '@vkruglikov/react-telegram-web-app'
 import { useTranslation } from 'react-i18next'
 
 function Home(props) {
@@ -12,11 +13,13 @@ function Home(props) {
   const [count, setCount] = useState(0.00)
   const [dotbefore, setDontbefore] = useState('0')
   const [dotafter, setDontafter] = useState('0')
+  const [isExpanded, expand] = useExpand()
   useEffect(() => {
     const num = 12.34
     var data = num.toString().split('.')
     setDontbefore(data[0] ? data[0] : '0')
     setDontafter(data[1] ? data[1] : '00')
+    expand()
   }, [])
   return (
       <div className={style.Home}>

@@ -38,5 +38,23 @@
       "tips": "Receive from another wallet"
     }
   },
+  "bank": {
+    "title": "Choose asset to buy",
+    "continue": "Continue",
+    "item1": {
+      "title": "Dollars"
+    },
+    "item2": {
+      "title": "Toncoin"
+    },
+    "item3": {
+      "title": "Bitcoin"
+    }
+  },
+  "nosupport": {
+    "title": "sadasda1",
+    "detail": "sadsadsad",
+    "goback": "go back home"
+  },
   "mine": {}
 }
