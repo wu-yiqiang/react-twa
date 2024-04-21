@@ -5,6 +5,7 @@ import SvgIcon from '@/components/SvgIcon'
 import Item from '@/pages/home/item'
 import Explore from '@/pages/home/explore'
 import { useTranslation } from 'react-i18next'
+
 function Home(props) {
   const navigate = useNavigate()
   const { t } = useTranslation()

@@ -23,5 +23,20 @@
       "title": "Play with cats and get rewards"
     }
   },
+  "addcrypto": {
+    "title": "您想如何添加加密货币？",
+    "item1": {
+      "title": "银行卡",
+      "tips": "使用银行卡购买"
+    },
+    "item2": {
+      "title": "P2P市场",
+      "tips": "通过广告购买他人的加密货币"
+    },
+    "item3": {
+      "title": "外部钱包",
+      "tips": "从外部钱包接收"
+    }
+  },
   "mine": {}
 }

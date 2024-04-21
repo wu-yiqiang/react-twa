@@ -23,5 +23,20 @@
       "title": "Play with cats and get rewards"
     }
   },
+  "addcrypto": {
+    "title": "How do you want to add crypto?",
+    "item1": {
+      "title": "Bank Card",
+      "tips": "Buy with your bank card"
+    },
+    "item2": {
+      "title": "P2P Market",
+      "tips": "Buy without intermediaries"
+    },
+    "item3": {
+      "title": "External Wallet",
+      "tips": "Receive from another wallet"
+    }
+  },
   "mine": {}
 }
