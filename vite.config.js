@@ -78,7 +78,7 @@ export default defineConfig({
         //   }
           // 'postcss-import': require('postcss-import'),
           // autoprefixer: require('autoprefixer')
-        }
+        // }
       }
     }
   },

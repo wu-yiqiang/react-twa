@@ -3,7 +3,7 @@ import style from './explore.module.scss'
 import React, { FC } from 'react'
 import SvgIcon from '@/components/SvgIcon'
 function Explore(props) {
-  const { title, url, pic, urlStr, strColorClass, colorClass } = props
+  const { title, path, pic, urlStr, strColorClass, colorClass } = props
   useEffect(() => {}, [])
   return (
     <div className={`${style.Explore} ${style[colorClass]}`}>

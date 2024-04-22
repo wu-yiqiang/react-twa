@@ -7,6 +7,9 @@ import Home from '@/pages/home/index'
 import Add from '@/pages/crypto/add'
 import Bank from '@/pages/bank/index'
 import NoSupport from '@/pages/nosupport/index'
+import Dollars from '@/pages/dollars'
+import Toncoin from '@/pages/toncoin'
+import Bitcoin from '@/pages/bitcoin'
 // /**
 //  * @typedef {object} Route
 //  * @property {string} path
@@ -23,7 +26,10 @@ const routesMap = [
   { path: '/home', Component: Home },
   { path: '/addcrypto', Component: Add },
   { path: '/bank', Component: Bank },
-  { path: '/nosupport', Component: NoSupport }
+  { path: '/nosupport', Component: NoSupport },
+  { path: '/dollars', Component: Dollars },
+  { path: '/toncoin', Component: Toncoin },
+  { path: '/bitcoin', Component: Bitcoin }
 ]
 
 export default routesMap
