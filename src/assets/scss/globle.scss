@@ -16,6 +16,7 @@
 @mixin noScrollBar {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+
   &::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -24,15 +25,35 @@
 
 @mixin bottom-button {
   cursor: pointer;
-    width: 100%;
-    padding: 18px;
-    position: fixed;
-    display: grid;
-    place-items: center;
-    color: var(--text-primary-color);
-    font-size: 16px;
-    font-weight: 700;
-    bottom: 0;
-    background-color: var(--color-primary);
-    z-index: 999999;
+  width: 100%;
+  padding: 18px;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  color: var(--text-primary-color);
+  font-size: 16px;
+  font-weight: 700;
+  bottom: 0;
+  background-color: var(--color-primary);
+  z-index: 999999;
+}
+
+@mixin type-color {
+  .blue {
+    color: blue;
+    font-size: 20px;
+    font-family: 700;
+  }
+
+  .orange {
+    color: rgb(255, 221, 0);
+    font-size: 20px;
+      font-family: 700;
+  }
+
+  .green {
+    color: rgb(0, 255, 85);
+    font-size: 20px;
+      font-family: 700;
+  }
 }

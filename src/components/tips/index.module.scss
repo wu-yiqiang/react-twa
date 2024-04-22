@@ -1,0 +1,26 @@
+.Tips {
+  padding: 10px;
+  background-color: var(--item-bgc-color);
+  border-radius: 10px;
+  @include type-color();
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .secondtitle {
+    font-size: 18px;
+    color: var(--color-text-primary);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .items {
+    font-size: 16px;
+    color: var(--color-text-primary);
+    .row {
+      display: flex;
+    }
+  }
+}

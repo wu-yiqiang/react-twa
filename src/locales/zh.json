@@ -51,6 +51,24 @@
       "title": "Bitcoin"
     }
   },
+  "bitcoin": {
+    "title": "比特币",
+    "secondtitle": "sadsadsad",
+    "item1": "go back home",
+    "item2": "go back home"
+  },
+  "dollers": {
+    "title": "泰达币",
+    "secondtitle": "中文展位",
+    "item1": "go back home",
+    "item2": "go back home"
+  },
+  "toncoin": {
+    "title": "比特币",
+    "secondtitle": "sadsadsad",
+    "item1": "go back home",
+    "item2": "go back home"
+  },
   "nosupport": {
     "title": "地区不支持",
     "detail": "由于您是不受支持的地区的居民或公民，对钱包的访问会受到限制，在常见问题解答中了解更多信息",

@@ -56,5 +56,23 @@
     "detail": "sadsadsad",
     "goback": "go back home"
   },
+  "bitcoin": {
+    "title": "Bitcoin in Wallet",
+    "secondtitle": "Bitcoin(BTC) is the pioneer of cryptocurrencies, launched in 2009.",
+    "item1": "Send and receive from anyone(fees apply).",
+    "item2": "Use for payment everywhere Bitcoin is accepted"
+  },
+  "dollers": {
+    "title": "Dollars in Wallet is USTD",
+    "secondtitle": "Dollars in Wallet stand for USTD(Tether) cryptocurrentcy as its price always roughly equel to US dollar.",
+    "item1": "Second to Telegram contacts instantly and without fees.",
+    "item2": "Use for payment everywhere USTD is accepted"
+  },
+  "toncoin": {
+    "title": "Toncoin in Wallet",
+    "secondtitle": "Toncoin in TON's native cryptocurrency",
+    "item1": "Send to Telegram contact instantly and without fee.",
+    "item2": "Use for Telegram Premium,exclusive usernames,and phone numbers."
+  },
   "mine": {}
 }

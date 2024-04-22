@@ -1,17 +1,35 @@
 .Detail {
   width: 100%;
-  border-bottom: 1px solid grey;
+  
+
   .content {
     width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .left{
-      
-    }
-    .right {
+    border-bottom: 1px solid grey;
 
+    .left {
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--color-text-primary);
+      }
+
+      .dollars {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 10px 0;
+        color: var(--color-text-primary);
+      }
+
+      .count {
+        font-size: 14px;
+        color: var(--color-text-placeholder);
+      }
     }
+
+    .right {}
   }
 }
